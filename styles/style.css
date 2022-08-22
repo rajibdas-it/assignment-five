@@ -1,27 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 .banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   height: 70vh;
-  /* height: 450px; */
   background-image: url(/assets/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.banner-msg {
-  text-align: center;
-}
 .banner-title {
   font-family: "Berkshire Swash", cursive;
-  font-size: 40px;
   color: #ff5e19;
-}
-.banner-text {
-  color: white;
 }
 
 .mbappe-pic {
