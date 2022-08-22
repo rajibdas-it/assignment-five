@@ -14,20 +14,26 @@
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body class="bg-slate-800 text-white">
-    <!-- <header>
+    <header>
       <section class="banner">
         <div class="banner-msg">
-          <h1 class="banner-title">Pray and donate for the flood victims</h1>
+          <h1 class="banner-title font-bold text-7xl mb-5">
+            Now Your Turn, Choose Your Beloved Player
+          </h1>
           <p class="banner-text">
-            Come forward with the help of flood affected people and encourage
-            others as well.
+            Legends at the Back and pick your favourite player from here!
           </p>
-          <button class="donate-btn">Let's Donate</button>
+          <div>
+            <img class="mbappe-pic" src="./assets/Mask Group.png" alt="" />
+            <img class="messi-pic" src="/assets/messi-banner.png" alt="" />
+            <img class="football-bg" src="/assets/football-bg.png" alt="" />
+            <img class="football" src="/assets/football.png" alt="" />
+          </div>
         </div>
       </section>
-    </header> -->
+    </header>
 
-    <header>
+    <!-- <header>
       <div class="banner">
         <h1 class="text-5xl font-bold text-amber-600 z-10">
           Now Your Term, Choose yours Fav Player
@@ -44,7 +50,7 @@
           <img class="football" src="/assets/football.png" alt="" />
         </div>
       </div>
-    </header>
+    </header> -->
     <main class="">
       <section class="grid grid-cols-3 gap-4 w-10/12 mx-auto mt-16">
         <div class="col-span-2">
@@ -151,14 +157,12 @@
 
         <!-- Aside Section -->
         <div>
-          <div class="bg-black m-2">
-            <h1 class="text-center font-bold text-2xl">Selected V</h1>
-            <ol class="p-5 list-decimal" id="player-list"></ol>
+          <div class="bg-black m-2 rounded-md">
+            <h1 class="text-center font-bold text-2xl">Selected-V</h1>
+            <ol class="p-8 list-decimal" id="player-list"></ol>
           </div>
-          <div class="bg-black m-2 p-2">
-            <h1 class="text-center font-bold text-2xl mt-3">
-              Calculate Expense
-            </h1>
+          <div class="bg-black m-2 p-2 rounded-md">
+            <h1 class="text-center font-bold text-2xl mt-3">Budget</h1>
             <p class="mt-3 text-center">
               Per Player
               <span
@@ -177,7 +181,7 @@
                 Calculate
               </button>
             </div>
-            <p class="mt-3 text-center">
+            <p class="mt-3 text-center font-bold">
               Player Expense: $<span id="player-expense">00</span>
             </p>
 
@@ -209,8 +213,9 @@
                 Calculate
               </button>
             </div>
-            <p class="mt-3 text-center">
-              Total: $<span id="total-expense">00</span>
+            <p class="mt-3 text-center font-bold">
+              Total: <span class="text-orange-600">$</span
+              ><span id="total-expense" class="text-orange-600">00</span>
             </p>
           </div>
         </div>
