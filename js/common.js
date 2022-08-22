@@ -4,7 +4,7 @@ function getValueFromInputFieldByID(elementId) {
   const expenseString = inputField.value;
   const expense = parseFloat(expenseString);
   if (expense <= 0) {
-    alert("Expense Cannot be Zero or -");
+    alert("Expense Amount Cannot be Zero or less than Zero");
   } else {
     return expense;
   }
