@@ -13,66 +13,209 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
-  <body class="bg-slate-600 text-white">
-    <header class="header">
-      <!-- <div>
-        <img class="w-full" src="/assets/cover-1.png" alt="" />
-      </div> -->
-      <h1 class="text-5xl font-bold text-center">
-        Now Your Term, Choose yours
-      </h1>
+  <body class="bg-slate-800 text-white">
+    <!-- <header>
+      <section class="banner">
+        <div class="banner-msg">
+          <h1 class="banner-title">Pray and donate for the flood victims</h1>
+          <p class="banner-text">
+            Come forward with the help of flood affected people and encourage
+            others as well.
+          </p>
+          <button class="donate-btn">Let's Donate</button>
+        </div>
+      </section>
+    </header> -->
+
+    <header>
+      <div class="banner">
+        <h1 class="text-5xl font-bold text-amber-600 z-10">
+          Now Your Term, Choose yours Fav Player
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+          accusantium non voluptate suscipit! Nihil ipsa molestiae soluta
+          commodi assumenda impedit.
+        </p>
+        <div>
+          <img class="mbappe-pic" src="./assets/Mask Group.png" alt="" />
+          <img class="messi-pic" src="/assets/messi-banner.png" alt="" />
+          <img class="football-bg" src="/assets/football-bg.png" alt="" />
+          <img class="football" src="/assets/football.png" alt="" />
+        </div>
+      </div>
     </header>
-    <main>
+    <main class="">
       <section class="grid grid-cols-3 gap-4 w-10/12 mx-auto mt-16">
         <div class="bg-red-500 col-span-2">
           <div id="card-div" class="grid grid-cols-3 gap-4 p-2">
             <!-- card-1 start -->
-            <div class="card w-full bg-slate-900 shadow-xl">
+            <div class="card w-full bg-black shadow-xl">
               <figure class="">
-                <img src="/assets/cover-1.png" alt="Shoes" class="h-56" />
+                <img src="/assets/card-1.png" alt="Shoes" class="w-full h-56" />
               </figure>
               <div class="card-body items-center text-center">
-                <h2 class="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <h2 class="card-title">Lionel Messi</h2>
+                <p><small>36 Goals</small> <small>120 Assist</small></p>
                 <div class="card-actions">
-                  <button class="btn btn-primary">Selected</button>
+                  <button class="btn btn-primary" onclick="addToList()">
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
             <!-- card-1 End -->
 
-            <!-- card-1 start -->
-            <div class="card w-full bg-slate-900 shadow-xl">
+            <!-- card-2 start -->
+            <div class="card w-full bg-black shadow-xl">
               <figure class="">
-                <img src="/assets/cover-1.png" alt="Shoes" class="h-56" />
+                <img src="/assets/card-2.png" alt="Shoes" class="w-full h-56" />
               </figure>
               <div class="card-body items-center text-center">
-                <h2 class="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <h2 class="card-title">Neymar Jr</h2>
+                <p><small>36 Goals</small> <small>120 Assist</small></p>
                 <div class="card-actions">
-                  <button class="btn btn-primary">Selected</button>
+                  <button class="btn btn-primary" onclick="addToList()">
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
-            <!-- card-1 End -->
-            <!-- card-1 start -->
-            <div class="card w-full bg-slate-900 shadow-xl">
+            <!-- card-2 End -->
+            <!-- card-3 start -->
+            <div class="card w-full bg-black shadow-xl">
               <figure class="">
-                <img src="/assets/cover-1.png" alt="Shoes" class="h-56" />
+                <img src="/assets/card-3.png" alt="Shoes" class="w-full h-56" />
               </figure>
               <div class="card-body items-center text-center">
-                <h2 class="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <h2 class="card-title">Kylian Mbappé</h2>
+                <p><small>36 Goals</small> <small>120 Assist</small></p>
                 <div class="card-actions">
-                  <button class="btn btn-primary">Selected</button>
+                  <button class="btn btn-primary" onclick="addToList()">
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
-            <!-- card-1 End -->
+            <!-- card-3 End -->
+            <!-- card-4 start -->
+            <div class="card w-full bg-black shadow-xl">
+              <figure class="">
+                <img src="/assets/card-4.png" alt="Shoes" class="w-full h-56" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Vítor Machado</h2>
+                <p><small>36 Goals</small> <small>120 Assist</small></p>
+                <div class="card-actions">
+                  <button class="btn btn-primary" onclick="addToList()">
+                    Select
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- card-4 End -->
+            <!-- card-5 start -->
+            <div class="card w-full bg-black shadow-xl">
+              <figure class="">
+                <img src="/assets/card-5.png" alt="Shoes" class="w-full h-56" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Sergio Ramos</h2>
+                <p><small>36 Goals</small> <small>120 Assist</small></p>
+                <div class="card-actions">
+                  <button class="btn btn-primary" onclick="addToList()">
+                    Select
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- card-5 End -->
+            <!-- card-6 start -->
+            <div class="card w-full bg-black shadow-xl">
+              <figure class="">
+                <img src="/assets/card-6.png" alt="Shoes" class="w-full h-56" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Renato Sanches</h2>
+                <p><small>36 Goals</small> <small>120 Assist</small></p>
+                <div class="card-actions">
+                  <button class="btn btn-primary" onclick="addToList()">
+                    Select
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- card-6 End -->
           </div>
         </div>
-        <div class="bg-violet-500">Aside</div>
+
+        <!-- Aside Section -->
+        <div class="bg-violet-500">
+          <div class="bg-black m-2">
+            <h1 class="text-2xl text-center">Selected V</h1>
+            <ol class="p-5">
+              <li>rajib</li>
+              <li>nazmul</li>
+              <li>chinmoy</li>
+              <li>shamim</li>
+              <li>Arif</li>
+            </ol>
+          </div>
+          <div class="bg-black m-2 p-2">
+            <h1 class="text-center font-bold text-2xl mt-3">
+              Calculate Expense
+            </h1>
+            <p class="mt-3 text-center">
+              Per Player
+              <span
+                ><input
+                  class="text-black p-1 rounded-md font-semibold"
+                  type="text"
+                  name=""
+                  id=""
+              /></span>
+            </p>
+            <div class="text-center">
+              <button
+                class="px-5 py-2 btn-primary mt-3 font-semibold rounded-md"
+              >
+                Calculate
+              </button>
+            </div>
+            <p class="mt-3 text-center">Player Expense:</p>
+
+            <p class="mt-3 text-center">
+              Manager
+              <span class="ml-3"
+                ><input
+                  class="text-black p-1 rounded-md font-semibold"
+                  type="text"
+                  name=""
+                  id=""
+              /></span>
+            </p>
+            <p class="mt-3 text-center mr-3">
+              Coach
+              <span class="ml-3"
+                ><input
+                  class="text-black p-1 rounded-md font-semibold"
+                  type="text"
+                  name=""
+                  id=""
+              /></span>
+            </p>
+            <div class="text-center">
+              <button
+                class="px-5 py-2 btn-primary mt-3 font-semibold rounded-md"
+              >
+                Calculate
+              </button>
+            </div>
+            <p class="mt-3 text-center">Total:</p>
+          </div>
+        </div>
       </section>
     </main>
+    <script src="/js/app.js"></script>
   </body>
 </html>
