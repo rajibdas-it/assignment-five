@@ -8,20 +8,17 @@ function addToList(clickedBtn) {
   } else {
     alert("you cannot added more than 4");
   }
+  display(palyersName);
+}
+
+function display(palyersName) {
   const olList = document.getElementById("player-list");
+  olList.innerHTML = "";
   for (i = 0; i < palyersName.length; i++) {
     player = palyersName[i];
     const li = document.createElement("li");
-    // li.innerText = "";
-    li.innerText = `${i + 1}. ${player}`;
+    li.innerText = player;
+    // li.innerText = `${i + 1}. ${player}`;
     olList.appendChild(li);
-
-    console.log(player);
   }
-  //   const li = document.createElement("li");
-  //   li.innerText = playerName;
-  //   olList.appendChild(li);
-  //   li.innerText = "";
-
-  console.log(palyersName);
 }
