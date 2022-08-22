@@ -1,4 +1,4 @@
 function addToList(clickedBtn) {
-  console.log("selected button clicked");
-  console.log(clickedBtn);
+  const playerName = clickedBtn.parentNode.parentNode.children[0].innerText;
+  console.log(playerName);
 }
