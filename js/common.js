@@ -12,6 +12,6 @@ function getValueFromInputFieldByID(elementId) {
 
 //Create a function for set value in html tag
 function setTextValueById(elementId, newValue) {
-  const setExpense = document.getElementById(elementId);
-  setExpense.innerText = newValue;
+  const expenseTag = document.getElementById(elementId);
+  expenseTag.innerText = newValue;
 }
