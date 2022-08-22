@@ -6,14 +6,14 @@ function addToList(clickedBtn) {
   if (palyersName.length <= 4) {
     palyersName.push(playerName);
     clickedBtn.disabled = true; //disable button after clicked.
-    // clickedBtn.setAttribute("disable", true);
+    clickedBtn.style.background = "#9998a7";
   } else {
     alert("you cannot add more than 5 players");
   }
   displayListItem(palyersName); // show player name into selected V card
 }
 
-// Create funtion for append li into ol with dynamic value.
+// Create funtion for append li into ol with dynamic
 function displayListItem(palyersName) {
   const olList = document.getElementById("player-list");
   olList.innerHTML = "";
