@@ -1,3 +1,3 @@
 function addToList() {
-  console.log("button clicked");
+  console.log("selected button clicked");
 }
