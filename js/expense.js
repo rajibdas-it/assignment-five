@@ -7,8 +7,13 @@ document
     const perPlayerExpense = getValueFromInputFieldByID("per-player-expense");
     // console.log(perPlayerCost);
     const totalPlayerExpense = perPlayerExpense * palyersName.length; //getting array.length from palyersName array of app.js
-    playerExpense = playerExpense + totalPlayerExpense;
-    setTextValueById("player-expense", totalPlayerExpense);
+
+    if (isNaN(totalPlayerExpense)) {
+      setTextValueById("player-expense", 0);
+    } else {
+      playerExpense = playerExpense + totalPlayerExpense;
+      setTextValueById("player-expense", totalPlayerExpense);
+    }
   });
 
 //Event Listner added for caculate total expense with palyer expense.
@@ -20,5 +25,9 @@ document
     const coachExpense = getValueFromInputFieldByID("coach-expense");
     const totalExpense = playerExpense + managerExpense + coachExpense;
     //console.log(totalExpense);
-    setTextValueById("total-expense", totalExpense);
+    if (isNaN(totalExpense)) {
+      setTextValueById("total-expense", 0);
+    } else {
+      setTextValueById("total-expense", totalExpense);
+    }
   });
